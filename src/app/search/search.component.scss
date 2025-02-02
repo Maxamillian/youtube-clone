@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+
+  @media (min-width: 657px) {
+    flex: 1;
+  }
+}
+
+.search-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 657px) {
+    margin-left: 2.5rem;
+  }
+}
+
+.search-box {
+  display: none;
+
+  @media (min-width: 657px) {
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #c6c6c6;
+    border-radius: 40px 0 0 40px;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 657px) {
+  .search-button {
+    height: 2.5rem;
+    width: 4rem;
+    border: 1px solid #c6c6c6;
+    border-left-width: 0;
+    border-radius: 0 40px 40px 0;
+    background-color: #f8f8f8;
+  }
+
+  .mic-button {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 1rem;
+  }
+}
