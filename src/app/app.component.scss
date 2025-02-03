@@ -1,3 +1,5 @@
+@use "../variables.scss";
+
 main {
   padding: 0 1rem;
 }
@@ -48,5 +50,16 @@ header {
         }
       }
     }
+  }
+}
+
+.main-content {
+  @media (min-width: 972px) {
+    margin-left: variables.$side-nav-width-sm;
+    width: calc(100% - variables.$side-nav-width-sm);
+  }
+  @media (min-width: 1313px) {
+    margin-left: variables.$side-nav-width-lg;
+    width: calc(100% - variables.$side-nav-width-lg);
   }
 }

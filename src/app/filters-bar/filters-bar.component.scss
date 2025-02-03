@@ -1,23 +1,6 @@
-@use "../../variables.scss";
-
 :host {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  padding: 0 24px;
-  box-sizing: border-box;
-  overflow: hidden;
   font-size: 14px;
   font-weight: 500;
-
-  @media (min-width: 972px) {
-    margin-left: variables.$side-nav-width-sm;
-    width: calc(100% - variables.$side-nav-width-sm);
-  }
-  @media (min-width: 1313px) {
-    margin-left: variables.$side-nav-width-lg;
-    width: calc(100% - variables.$side-nav-width-lg);
-  }
 }
 
 .chip-set {
@@ -74,6 +57,12 @@ mat-basic-chip {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   cursor: pointer;
+
+  &.selected,
+  &.selected:hover {
+    background-color: #000;
+    color: #fff;
+  }
 
   transition: background-color 0.2s ease-in-out;
 

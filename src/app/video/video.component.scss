@@ -1,0 +1,35 @@
+:host {
+  flex: 1 1 265px;
+}
+
+.video {
+  margin-bottom: 16px;
+
+  .thumbnail {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .details {
+    display: flex;
+    cursor: pointer;
+
+    .avatar {
+      font-size: 40px;
+      margin-right: 12px;
+    }
+    .title {
+      font-weight: 500;
+      margin-bottom: 6px;
+      height: 38px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .stats {
+      font-size: 14px;
+      color: #606060;
+    }
+  }
+}

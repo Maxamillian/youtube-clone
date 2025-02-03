@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterOutlet } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { VideosComponent } from './videos/videos.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     SearchComponent,
     SideNavComponent,
     FiltersBarComponent,
+    VideosComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
