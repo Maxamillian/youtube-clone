@@ -2,7 +2,7 @@
   <header>
     <div class="start">
       <button mat-icon-button class="side-nav">
-        <mat-icon>menu</mat-icon>
+        <span class="material-symbols-sharp">menu</span>
       </button>
       <app-logo />
     </div>
@@ -13,16 +13,18 @@
 
     <div class="end">
       <button mat-icon-button>
-        <mat-icon>more_vert</mat-icon>
+        <span class="material-symbols-sharp filled">more_vert</span>
       </button>
       <button mat-stroked-button class="sign-in">
-        <mat-icon color="none" fontSet="material-icons-outlined"
-          >account_circle</mat-icon
-        >Sign In
+        <div>
+          <span class="material-symbols-sharp">account_circle</span>
+          <span>Sign In</span>
+        </div>
       </button>
     </div>
   </header>
   <app-side-nav />
+  <app-filters-bar />
 </main>
 
 <router-outlet />

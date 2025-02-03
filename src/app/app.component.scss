@@ -35,14 +35,17 @@ header {
 
     .sign-in {
       height: 2.25rem;
-      padding: 0 1rem;
+      padding: 0 15px;
       font-size: 14px;
       border-color: rgba(0, 0, 0, 0.1);
 
-      mat-icon {
-        height: 1.5rem;
-        width: 1.5rem;
-        font-size: 1.5rem;
+      div {
+        display: flex;
+        align-items: center;
+        .material-symbols-sharp {
+          margin-right: 6px;
+          margin-left: -6px;
+        }
       }
     }
   }

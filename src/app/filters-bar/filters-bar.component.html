@@ -1,0 +1,32 @@
+<div class="chip-set" (scroll)="onScroll($event)">
+  @if(!scrolledToStart) {
+  <div class="arrow left">
+    <div class="button-container">
+      <button mat-icon-button>
+        <span class="material-symbols-sharp">arrow_back_ios</span>
+      </button>
+    </div>
+  </div>
+  }
+  <mat-basic-chip>All</mat-basic-chip>
+  <mat-basic-chip>Music</mat-basic-chip>
+  <mat-basic-chip>Gaming</mat-basic-chip>
+  <mat-basic-chip>Podcasts</mat-basic-chip>
+  <mat-basic-chip>Live</mat-basic-chip>
+  <mat-basic-chip>Legos</mat-basic-chip>
+  <mat-basic-chip>Electrical Engineering</mat-basic-chip>
+  <mat-basic-chip>Electronic Components</mat-basic-chip>
+  <mat-basic-chip>Animated Films</mat-basic-chip>
+  <mat-basic-chip>Information</mat-basic-chip>
+  <mat-basic-chip>Role-Playing Games</mat-basic-chip>
+  <mat-basic-chip>Recently Uploaded</mat-basic-chip>
+  @if(!scrolledToEnd) {
+  <div class="arrow right">
+    <div class="button-container">
+      <button mat-icon-button>
+        <span class="material-symbols-sharp">arrow_forward_ios</span>
+      </button>
+    </div>
+  </div>
+  }
+</div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { FiltersBarComponent } from './filters-bar/filters-bar.component';
 import { LogoComponent } from './logo/logo.component';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { RouterOutlet } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
@@ -12,9 +12,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     RouterOutlet,
     LogoComponent,
     MatButtonModule,
-    MatIconModule,
     SearchComponent,
     SideNavComponent,
+    FiltersBarComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
