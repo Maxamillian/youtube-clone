@@ -1,0 +1,33 @@
+<div class="side-nav">
+  <app-nav-item
+    tabName="Home"
+    iconName="home"
+    [selectedTab]="selectedTab"
+    (updateSelectedTab)="updateSelectedTab($event)"
+  />
+  <app-nav-item
+    tabName="Shorts"
+    iconName="web_stories"
+    [selectedTab]="selectedTab"
+    (updateSelectedTab)="updateSelectedTab($event)"
+  />
+  <app-nav-item
+    tabName="Subscriptions"
+    iconName="subscriptions"
+    [selectedTab]="selectedTab"
+    (updateSelectedTab)="updateSelectedTab($event)"
+  />
+  <hr class="divider" />
+  <app-nav-item
+    tabName="You"
+    iconName="account_circle"
+    [selectedTab]="selectedTab"
+    (updateSelectedTab)="updateSelectedTab($event)"
+  />
+  <app-nav-item
+    iconName="history"
+    tabName="History"
+    [selectedTab]="selectedTab"
+    (updateSelectedTab)="updateSelectedTab($event)"
+  />
+</div>

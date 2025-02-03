@@ -1,0 +1,8 @@
+<div class="nav-item">
+  <button (click)="selectTab()" [class.selected]="isSelected">
+    <span class="material-symbols-sharp" [class.filled]="isSelected">{{
+      iconName
+    }}</span>
+    <span class="label">{{ tabName }}</span>
+  </button>
+</div>

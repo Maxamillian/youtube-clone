@@ -1,0 +1,38 @@
+:host {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 72px;
+  padding: 0 4px;
+  box-sizing: border-box;
+
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+  }
+
+  .divider {
+    display: none;
+    margin: 12px 0;
+  }
+
+  @media (min-width: 972px) {
+    display: block;
+  }
+  @media (min-width: 1313px) {
+    width: 240px;
+    padding: 0 12px;
+
+    .side-nav {
+      margin-top: 12px;
+    }
+
+    .divider {
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+}
